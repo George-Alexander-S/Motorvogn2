@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Motorvognregister</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="container-md">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <h2>Motorvognregister</h2>
+            <form id="motorvogn">
+                <div class="mt-4">
+                    <label for="navn" class="form-label font-weight-bold">Navn</label>
+                    <input type="text" class="form-control" id="navn">
+
+                    <label for="personnr" class="form-label font-weight-bold">Personnr</label>
+                    <input type="text" class="form-control" id="personnr">
+
+                    <label for="adresse" class="form-label font-weight-bold">Adresse</label>
+                    <input type="text" class="form-control" id="adresse">
+
+                    <label for="kjennetegn" class="form-label font-weight-bold">Kjennetegn</label>
+                    <input type="text" class="form-control" id="kjennetegn">
+
+                    <label for="merke" class="form-label font-weight-bold">Merke</label>
+                    <input type="text" class="form-control" id="merke">
+
+                    <label for="type" class="form-label font-weight-bold">Type</label>
+                    <input type="text" class="form-control" id="type">
+                </div>
+            </form>
+            <button onclick="registrer()"  class="btn btn-primary type=button mt-4" value="Registrer">Registrer</button>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div id="vogner"></div>
+            <button onclick="slettAlle()" class="btn btn-danger type=button mt-3" value="Registrer">Slett alle</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
